@@ -1,0 +1,184 @@
+.bkg1 {
+	background-image: url(../img/hero001.png);
+	background-size: cover;
+	background-color: #020C03;
+	}
+	
+.bkg2 {
+	background-image: url(../img/hero002.png);
+	background-size: cover;
+	background-color: #D2DCE6;
+	}
+
+.red {
+	border: 1px red solid!important;
+	}
+
+.bar {
+	background-color: #417505;
+	}
+
+.reverse {
+	color: #fff;
+	}
+
+.dark {
+	background-color: rgba(0,0,0,0.75);
+	}
+	
+.dark-bkg2 {
+	background-color: rgba(210,220,230,0.75);
+}
+	
+.padded {
+	margin-top: 2em;
+	margin-bottom: 2em;
+	}
+
+.smaller {
+	font-size: x-small;
+	}
+
+input[type="text"]::-webkit-input-placeholder,
+input[type="email"]::-webkit-input-placeholder,
+input[type="password"]::-webkit-input-placeholder {
+   color: #CCC;
+	}
+	
+.mountains {
+	background-image: url(../img/bkg-tree.png);
+	background-size: cover;
+	background-color: #020C03;
+	}
+	
+	
+.scroll {
+	padding: 1em;
+	max-height: 200px;
+	overflow: scroll;
+	background-color: #FFF;
+	border: 1px solid #f7f7f7;
+}
+
+.logo {
+	height: 50px;
+}
+
+ul.scenarios li a {
+	display: block;
+	margin: 1em 0;
+}
+
+
+@media (max-width: 599px) {
+  	ul.scenarios li a {
+  	text-align: center;
+	}
+	
+	.desktop {
+		display: none;
+	}
+}
+
+@media (min-width: 600px) {
+	.native {
+		display: none;
+	}
+
+}
+
+
+
+
+/* overwrites bootstrap
+---------------------------------------------- */
+
+.navbar {
+	margin-bottom: 0;
+}
+
+.navbar-default {
+	background-color: #417505;
+	border: none;
+}
+
+.navbar-brand {
+	padding: 0;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+	background-color: rgba(255,255,255,0.25);
+	}
+
+a.navbar-toggle {
+	color: #fff;
+	border: none;
+}
+
+
+.progress {
+	height: 3px;
+	}
+	
+a {
+	color: #417505;
+	}
+	
+.btn.btn-default.text-left {
+	text-align: left!important;
+	text-decoration: none;
+	font-weight: 400;
+}
+
+.btn-default,
+.btn-default:hover {
+	border-color: #ECECEC;
+}
+
+.btn-default:hover {
+	background-color: #F7F7F7;
+	color: #575C67;
+}
+
+
+/* overwrites flipclock
+---------------------------------------------- */
+
+
+@media (max-width: 599px) {
+  .flip-clock-wrapper ul {
+	font-weight: lighter!important;
+	width: 20px!important;
+	font-size: 14px!important;
+	}
+	
+	.flip-clock-wrapper ul li a div.up:after {
+	top:48px!important;	
+	}
+}
+
+
+
+@media (min-width: 600px) {
+.flip-clock-wrapper ul {
+	font-weight: lighter!important;
+	width: 100px!important;
+	height: 100px!important;
+	font-size: 200px!important;
+	}
+	
+	
+	.flip-clock-label {
+		display: none;
+	}
+		
+	.flip-clock-wrapper ul li a div.up:after {
+		top:98px!important;	
+	}
+	
+	.native {
+		display: none;
+	}
+
+}
