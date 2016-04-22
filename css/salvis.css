@@ -46,7 +46,7 @@ input[type="password"]::-webkit-input-placeholder {
 	}
 	
 .mountains {
-	background-image: url(../img/bkg-mountains.png);
+	background-image: url(../img/bkg-tree.png);
 	background-size: cover;
 	background-color: #020C03;
 	}
@@ -60,30 +60,38 @@ input[type="password"]::-webkit-input-placeholder {
 	border: 1px solid #f7f7f7;
 }
 
+.logo {
+	height: 50px;
+}
+
+
 
 
 /* overwrites bootstrap
 ---------------------------------------------- */
+
 .navbar {
 	margin-bottom: 0;
 }
 
-.navbar-header {
-	float: none;
-}
-
 .navbar-default {
+	background-color: #417505;
 	border: none;
 }
 
 .navbar-brand {
-	height: auto;
+	padding: 0;
 }
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
 	background-color: rgba(255,255,255,0.25);
 	}
+
+a.navbar-toggle {
+	color: #fff;
+	border: none;
+}
 
 
 .progress {
@@ -126,6 +134,13 @@ a {
 	.flip-clock-wrapper ul li a div.up:after {
 	top:48px!important;	
 	}
+	
+	
+	.desktop {
+		display: none;
+	}
+	
+	
 }
 
 
@@ -139,14 +154,16 @@ a {
 	}
 	
 	
-.flip-clock-label {
-	display: none;
-}
+	.flip-clock-label {
+		display: none;
+	}
+		
+	.flip-clock-wrapper ul li a div.up:after {
+		top:98px!important;	
+	}
 	
-.flip-clock-wrapper ul li a div.up:after {
-	top:98px!important;
-	
-	
-}
+	.native {
+		display: none;
+	}
 
 }
